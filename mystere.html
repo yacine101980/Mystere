@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="mystere.html" rel="stylesheet">
+    
+  </head>
+  <body onload="new_game()">
+    <div id="game_selection">
+        <button id="start_game1" onclick="start_player_guess_game()">commencer jeu1</button>
+        <button id="start_game2" onclick="start_computer_guess_game()">commencer jeu2</button>
+    </div>
+    <div id="game1">
+        <input type="text" id="player_input">
+        <button id="try_button" onclick="try_event()">essayer</button>
+        <div id="message1"></div>
+        <button id="restart_button1" onclick="new_game()">recommencer</button>
+    </div>
+    <div id="game2">
+        <div id="message2"></div>
+        <button id="smaller_button" onclick="smaller_event()">Plus petit</button>
+        <button id="bigger_button" onclick="bigger_event()">Plus grand</button>
+        <button id="found_button" onclick="found_event()">Trouvé</button>
+        <button id="restart_button2" onclick="new_game()">recommencer</button>
+    </div>
+    <script src="script/mystere.js"></script>
+  </body>
+</html>
